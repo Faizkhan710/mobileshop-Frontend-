@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="icon" href="images/bg4.png">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    .crt {
+        font-size: .8rem;
+    }
+    
+    .shop-container {
+        display: flex;
+    }
+    
+    .shop-container .crt {
+        border-radius: .1rem;
+        background: red;
+        padding: 0 3rem;
+        transition: .2s opacity;
+    }
+    
+    .shop-container .crt:hover {
+        opacity: .9;
+        cursor: pointer;
+    }
+    
+    .count-container {
+        border: 1px solid gray;
+        border-radius: .1rem;
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+    
+    .count-container svg {
+        width: 3rem;
+        color: white;
+    }
+    
+    .count-container span {
+        user-select: none;
+        position: absolute;
+        background-color: red;
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: .8rem;
+        border-radius: 50%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: .2rem;
+    }
+</style>
+
+<body>
+    <div class="shop-container">
+        <div class="count-container">
+            <span id="counter">1</span>
+            <i style="font-size:20px;" class="bi bi-cart icnn Under-line1"></i>
+
+        </div>
+        <button class="crt" id="add-ani">Add to cart</button>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+
+</body>

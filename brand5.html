@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product-details</title>
+    <link rel="icon" href="images/bg4.png">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid shadow fixed-top bg-light ">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="log mt-1">
+                    <img class="igg" src="images/bg3.png" alt="" width="240px" height="100%">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form autocomplete="off">
+                    <div>
+                        <input type="text" id="input" placeholder="Search Here..." />
+                    </div>
+                    <ul class="list shadow"></ul>
+                </form>
+                <script src="script.js"></script>
+
+                <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+                <!-- Stylesheet -->
+                <link rel="stylesheet" href="style.css" />
+
+            </div>
+            <div class="col-md-5">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto   mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a style="font-size:18px ; color: #ff9900; font-weight: 500;" class="nav-link active   " aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="font-size:18px ;" class="nav-link active  Under-line1 " href="shop.html">Shop</a>
+                                </li>
+                                <a style="font-size:18px ;" class="nav-link dropdown-toggle active " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li>
+                                        <h5><a style="text-align:center ; font-weight: 500; color: #ff9900;" class="dropdown-item Under-line1" href="#">SmartPhone</a></h5>
+                                    </li>
+                                    <li><a class="dropdown-item Under-line1" href="iphone.html">Iphone</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="vivo.html"> Vivo</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="samsung.html">Samsung</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="xiomo.html">Xiaomi</a></li>
+
+                                    <li>
+                                        <h5><a style="text-align:center ; font-weight: 500; color: #ff9900;" class="dropdown-item Under-line1" href="#">Laptops</a></h5>
+                                    </li>
+                                    <li><a class="dropdown-item Under-line1" href="laptop-Hp.html">HP</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="laptop-apple.html">Apple</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="laptopDell.html">Dell</a></li>
+
+                                    <li>
+                                        <h5><a style="text-align:center ; font-weight: 500; color: #ff9900;" class="dropdown-item Under-line1" href="#">Smartwatch</a></h5>
+                                    </li>
+                                    <li><a class="dropdown-item Under-line1" href="xiomo-wa.html">xiaomi</a></li>
+                                    <li><a class="dropdown-item Under-line1" href="i-watch.html">Apple</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a style="font-size:18px ;" class="nav-link active  Under-line1 " href="AboutUs.html" tabindex="-1" aria-disabled="true">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a style="font-size:18px ;" class="nav-link active  Under-line1 " href="Contactus.html" tabindex="-1" aria-disabled="true">Contact
+                        Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-1 gj">
+                <div style="display: flex;" class="mm">
+
+                    <div style="margin-top:5px ;" class="login-icon">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i
+                    style="font-size:30px ; color: #ff9900;" class="bi bi-person-circle icnn Under-line1 "></i></a>
+                    </div>
+
+                    <div id="cart" class=" login-icon cart" data-totalitems="0">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle1"><i
+                    class="fas fa-shopping-cart icnn"></i></a>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><br>
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered form">
+            <div class="modal-content" style="padding: 20px;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <center>
+                                <div class="img"><img src="images/bg3.png" alt="" width="100%" height="100%"></div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <table class="table w-100">
+                        <tr>
+                            <td>tittle</td>
+                            <td>price</td>
+                            <td>action</td>
+                        </tr>
+
+                    </table>
+                    <h2>Total = Rs. <span class="totalprice"></span></h2>
+                    <br>
+                    <center>
+                        <a href="checkout.html"> <button style="padding: 5px 30px; font-size: 20px;" class="bbt">checkout</button></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered form">
+            <div class="modal-content" style="padding: 20px;">
+
+                <center>
+                    <div class="div">
+                        <img class="iaa" src="images/bg3.png" alt="">
+                    </div>
+                </center>
+                <br>
+                <form action="" onsubmit="return validate()">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="name" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn1 button2">Login</button>
+                    <label>
+                <input type="checkbox" name="remember"> Remember me
+              </label>
+                </form>
+                <br><br>
+                <div style="background-color:#f1f1f1; padding: 5px 10px; ">
+                    <button type="button" class="cancelbtn btn-group button2 ">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product">
+                    <div class="main-img">
+                        <img src="images/xowatch5-2.png" class="pro-img" alt="product" />
+                    </div>
+                    <div class="thumb-img">
+                        <div class="box active" onclick="changeImage(this)">
+                            <img src="images/xowatch5-1.png" alt="thumb" />
+                        </div>
+                        <div class="box active" onclick="changeImage(this)">
+                            <img src="images/xowatch5-2.png" alt="thumb" />
+                        </div>
+                    </div>
+                </div>
+       
+         
+            </div>
+            <div style="margin-top:80px ;" class="col-md-6">
+                <h6>Smartwatch / Xiaomi</h6>
+                <h3 class="itemtittle">Mi Smart Band 5</h3>
+                <h2 class="itemptice">Rs. 4699</h2>
+                <input style="padding: 3px ; width: 50px;" type="number" value="1"> <br><br>
+                <div style=" float: left;" class="crd-button">
+                    <button class="buybtn bbt" id="addtocart14">
+                    Add to Cart
+                  </button>
+                    <script src="script.js"></script>
+                </div>
+                <br>
+                <br>
+                <div class="info mt-3">
+                    <h4>Product Details</h4>
+                    <span><ol>
+                <li>	11 Sports Modes</li>
+                <li> Camera	No </li>
+                <li> Screen Type	AMOLED </li>
+                <li>Resolution	126 x 29</li>
+                <li>			125 mAh Lithium-ion polymer battery</li>
+            </ol></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="text-align:center ; color: #ff9900;">Feature Products</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/xiaomi-poco-f4-gt-pakistan-price-removebg-preview.png" alt="" height="70%" width="100%">
+                <div style="margin: 0; padding: 0;" class="info">
+                    <h5 class="itemtittle" style="font-size: 19px; text-align: center;">Xiaomi Poco F4 </h5>
+                    <p class="itemptice" style="font-size: 19px; text-align: center;">Rs. 139999</p>
+                    <section class='o-container'>
+
+                        <!-- Rating Stars Box -->
+                        <ul id='js-rating-star4' class="c-rating-star u-text-center" data-name="test">
+                            <li class='c-rating-star__item' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                        </ul>
+
+
+                    </section>
+                    <div class="crd-button">
+                        <button class="buybtn bbt" id="addtocart5">
+                  Add to Cart
+                </button>
+                        <a href="pocof4.html"> <button class=" bbt">Buy Now</button></a>
+                        <script src="script.js"></script>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <img src="images/iphone-removebg-preview.png" alt="" height="70%" width="100%">
+                <div style="margin: 0; padding: 0;" class="info">
+                    <h5 class="itemtittle" style="font-size: 19px; text-align: center;">iPhone 12 pro</h5>
+                    <p class="itemptice" style="font-size: 19px; text-align: center;">Rs. 179999</p>
+                    <section class='o-container'>
+
+                        <!-- Rating Stars Box -->
+                        <ul id='js-rating-star5' class="c-rating-star u-text-center" data-name="test">
+                            <li class='c-rating-star__item' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                        </ul>
+
+
+                    </section>
+
+                    <div class="crd-button">
+                        <button class="buybtn bbt" id="addtocart6">
+                  Add to Cart
+                </button>
+                        <a href="iphone123.html"> <button class=" bbt">Buy Now</button></a>
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <img src="images/google-pixel-6-pro-pakistan-pric-removebg-preview.png" alt="" height="70%" width="100%">
+                <div class="info">
+                    <h5 class="itemtittle" style="font-size: 19px; text-align: center;">Google Pixel 6 Pro</h5>
+                    <p class="itemptice" style="font-size: 19px; text-align: center;">Rs. 129999</p>
+                    <section class='o-container'>
+
+                        <!-- Rating Stars Box -->
+                        <ul id='js-rating-star6' class="c-rating-star u-text-center" data-name="test">
+                            <li class='c-rating-star__item' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                        </ul>
+
+
+                    </section>
+
+                    <div class="crd-button">
+                        <button class="buybtn bbt" id="addtocart7">
+                  Add to Cart
+                </button>
+                        <a href="google.html"> <button class=" bbt">Buy Now</button></a>
+                        <script src="script.js"></script>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <img src="images/infinix-note-12-pakistan-priceoy-removebg-preview.png" alt="" height="70%" width="100%">
+                <div class="info">
+                    <h5 class="itemtittle" style="font-size: 19px; text-align: center;">Infinix Note 12 </h5>
+                    <p class="itemptice" style="font-size: 19px; text-align: center;">Rs. 34899</p>
+                    <section class='o-container'>
+
+                        <!-- Rating Stars Box -->
+                        <ul id='js-rating-star7' class="c-rating-star u-text-center" data-name="test">
+                            <li class='c-rating-star__item' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                            <li class='c-rating-star__item' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw c-rating-star__icon'></i>
+                            </li>
+                        </ul>
+
+
+                    </section>
+                    <div class="crd-button">
+                        <button class="buybtn bbt" id="addtocart8">
+                  Add to Cart
+                </button>
+                        <a href="infinic 12.html.html"> <button class=" bbt">Buy Now</button></a>
+                        <script src="script.js"></script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-fluid myfooter">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main">
+                    <br>
+                    <center>
+                        <div class="endimg" style="width: 200px; height: 185px; ">
+                            <img src="images/bg3.png" alt="">
+                        </div>
+                    </center>
+                    <br>
+                    <div style="margin-top: -60px;" class="my-buttons">
+                        <a class=" Under-line" href="#">HOME</a>
+                        <a class=" Under-line" href="#">Feature</a>
+                        <a class=" Under-line" href="#">CONTACT US
+        </a>
+                        <a class=" Under-line" href="#">ABOUT US</a>
+
+                    </div>
+                    <br>
+                    <div class="icons">
+                        <a class="icn-fb" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a class="icn-twit" href="https://twitter.com/i/flow/login"> <i class="bi bi-twitter"></i></a>
+                        <a class="icn-insta" href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <br>
+                    <div class="copy">
+                        <p>Copyright 2022 | ALL RIGHTS RESERVED | </p>
+                        <a style="text-decoration: none ;" href="" target="blank">
+                            <p style="color: #ff9900;"> Supply Store</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<style>
+    .endimg {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .my-buttons a {
+        color: white !important;
+    }
+    
+    .icons {
+        color: white;
+    }
+    
+    .myfooter {
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    
+    .Under-line {
+        text-decoration: none;
+    }
+    
+    .Under-line::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: #ff9900;
+        margin: auto;
+        display: block;
+    }
+    
+    .Under-line:hover::after {
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .my-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        font-size: 35px;
+        color: #52b07c;
+    }
+    
+    .copy {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .copy {
+        color: gray;
+    }
+    
+    .feature-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .icn-fb {
+        color: white;
+    }
+    
+    .icn-fb:hover {
+        color: #3b5998;
+    }
+    
+    .icn-twit {
+        color: white;
+    }
+    
+    .icn-twit:hover {
+        color: #00acee;
+    }
+    
+    .icn-insta {
+        color: white;
+    }
+    
+    .icn-insta:hover {
+        color: #C13584;
+    }
+</style>
+</body>
+
+</html>
+
+<script>
+    buybtns = document.querySelectorAll(".buybtn")
+    mycart = document.querySelector(".table")
+
+    if (localStorage.getItem("carthtml")) {
+        mycart = document.querySelector(".table")
+        mycart.innerHTML = JSON.parse(localStorage.getItem("carthtml"))
+        addRemoveability()
+        updatePrice()
+    }
+
+    for (i = 0; i < buybtns.length; i++) {
+        buybtns[i].addEventListener('click', function() {
+            btnevent = event.target
+            btnparent = btnevent.parentElement.parentElement
+
+            itemtittle = btnparent.querySelector(".itemtittle").innerText
+            itemptice = btnparent.querySelector(".itemptice").innerText
+
+            mycart.innerHTML += `
+        <tr>
+        <td>${itemtittle}</td>
+        <td class="prodprice">${itemptice}</td>
+        <td><button class="btn btn-outline-danger w-100 text-center rmvbtn">Remove</button></td>
+        </tr>
+        `
+            addRemoveability()
+            updatePrice()
+            savetoLocalStorage()
+        })
+    }
+
+    function savetoLocalStorage() {
+        localStorage.setItem("carthtml", JSON.stringify(mycart.innerHTML))
+    }
+
+    function addRemoveability() {
+        rmvbtns = document.querySelectorAll(".rmvbtn")
+
+        for (i = 0; i < rmvbtns.length; i++) {
+            rmvbtns[i].addEventListener('click', function() {
+                rmvbtnevent = event.target
+                rmvbtnevent.parentElement.parentElement.remove()
+                updatePrice()
+                savetoLocalStorage()
+            })
+        }
+    }
+
+    function updatePrice() {
+        prodprice = mycart.querySelectorAll(".prodprice")
+            // console.log(prodprice)
+        sum = 0
+
+        for (i = 0; i < prodprice.length; i++) {
+            sum = sum + parseInt(prodprice[i].innerText.replace("Rs. ", ""))
+        }
+
+        document.querySelector(".totalprice").innerText = sum
+        localStorage.setItem("Tottal", sum.toString())
+
+    }
+</script>
